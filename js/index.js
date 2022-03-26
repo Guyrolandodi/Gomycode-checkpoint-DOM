@@ -1,8 +1,8 @@
 let btnPlusAll = document.querySelectorAll('.qty-plus');
 let btnMinusAll = document.querySelectorAll('.qty-minus');
 
-btnPlusAll.forEach((btn) => {btn.addEventListener('click', increaseQuantity)});
-btnMinusAll.forEach((btn) => {btn.addEventListener('click', decreaseQuantity)});
+btnPlusAll.forEach((btn) => {btn.addEventListener('click', augmenter)});
+btnMinusAll.forEach((btn) => {btn.addEventListener('click', diminuer)});
 
 let totalDisplay = document.querySelector('#total_display');
 let addBtn = document.querySelector('#add_button');
@@ -25,11 +25,11 @@ function loadEvents() {
     let btnPlusAll = document.querySelectorAll('.qty-plus');
     let btnMinusAll = document.querySelectorAll('.qty-minus');
   
-    btnPlusAll.forEach((btn) => {btn.addEventListener('click', increaseQuantity)});
-    btnMinusAll.forEach((btn) => {btn.addEventListener('click', decreaseQuantity)});
+    btnPlusAll.forEach((btn) => {btn.addEventListener('click', augmenter)});
+    btnMinusAll.forEach((btn) => {btn.addEventListener('click', diminuer)});
     
 }
-function increaseQuantity(){
+function augmenter(){
     this.previousElementSibling.value++
 
     
@@ -37,7 +37,7 @@ function increaseQuantity(){
     
 }
 
-function decreaseQuantity(){
+function diminuer(){
     // let qty = document.querySelector('.qty');
 
     let qty = this.nextElementSibling;
