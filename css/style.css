@@ -138,3 +138,7 @@ input[type="number"] {
 	cursor: pointer;
 	
 }
+img{
+	width: 100px;
+	height: 100px;
+}
